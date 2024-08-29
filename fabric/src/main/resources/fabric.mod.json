@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "useful_pills",
+  "version": "${version}",
+  "name": "Useful Pills",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Bandit-bytes"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.bandit.useful_pills.fabric.UsefulPillModFabric"
+    ],
+    "client": [
+      "net.bandit.useful_pills.fabric.client.UsefulPillModFabricClient"
+    ]
+  },
+  "mixins": [
+    "useful_pills.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.3",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
