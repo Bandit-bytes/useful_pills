@@ -1,5 +1,6 @@
 package net.bandit.useful_pills;
 
+import net.bandit.useful_pills.effect.CreativeFlightEffect;
 import net.bandit.useful_pills.effect.LavaVisionEffect;
 import net.bandit.useful_pills.effect.StealthEffect;
 import net.minecraft.world.effect.MobEffect;
@@ -14,6 +15,8 @@ public class ModEffects {
             LavaVisionEffect::new);
     public static final RegistrySupplier<MobEffect> STEALTH = MOB_EFFECTS.register("stealth_effect",
             StealthEffect::new);
+    public static final RegistrySupplier<MobEffect> CREATIVE_FLIGHT = MOB_EFFECTS.register("creative_flight",
+            CreativeFlightEffect::new);
 
 
     public static void register() {

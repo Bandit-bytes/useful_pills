@@ -18,6 +18,8 @@ public class ModItems {
             () -> new CureInsomniaPillItem(new Item.Properties().stacksTo(4).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS).rarity(Rarity.EPIC)));
     public static final RegistrySupplier<Item> STEALTH_PILL = ITEMS.register("stealth_pill",
             () -> new StealthPillItem(new Item.Properties().stacksTo(4).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS).rarity(Rarity.EPIC)));
+    public static final RegistrySupplier<Item> CREATIVE_FLIGHT_PILL = ITEMS.register("creative_flight_pill",
+            () -> new CreativeFlightPillItem(new Item.Properties().stacksTo(4).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS).rarity(Rarity.EPIC)));
     public static final RegistrySupplier<Item> FIRE_RESISTANCE_PILL = ITEMS.register("fire_resistance_pill",
             () -> new FireResistancePillItem(new Item.Properties().stacksTo(16).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS).rarity(Rarity.UNCOMMON)));
     public static final RegistrySupplier<Item> BLACK_OUT_PILL = ITEMS.register("black_out_pill",
