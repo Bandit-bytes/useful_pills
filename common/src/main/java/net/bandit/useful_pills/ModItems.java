@@ -12,6 +12,8 @@ import net.minecraft.world.item.Rarity;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(UsefulPillsMod.MOD_ID, Registries.ITEM);
 
+    public static final RegistrySupplier<Item> EMPTY_PILL = ITEMS.register("empty_pill",
+            () -> new Item(new Properties().stacksTo(64).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS)));
     public static final RegistrySupplier<Item> WATER_PILL = ITEMS.register("water_pill",
             () -> new WaterPillItem(new Properties().stacksTo(32).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS).rarity(Rarity.RARE)));
     public static final RegistrySupplier<Item> CURE_INSOMNIA_PILL = ITEMS.register("cure_insomnia_pill",
@@ -24,6 +26,8 @@ public class ModItems {
             () -> new FireResistancePillItem(new Item.Properties().stacksTo(16).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS).rarity(Rarity.UNCOMMON)));
     public static final RegistrySupplier<Item> BLACK_OUT_PILL = ITEMS.register("black_out_pill",
             () -> new BlackOutPillItem(new Item.Properties().stacksTo(16).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS).rarity(Rarity.UNCOMMON)));
+    public static final RegistrySupplier<Item> TELEPORT_PILL = ITEMS.register("teleport_pill",
+            () -> new TeleportPillItem(new Item.Properties().stacksTo(4).arch$tab(CreativeModeTabs.FOOD_AND_DRINKS).rarity(Rarity.EPIC)));
 
 
     public static void register() {

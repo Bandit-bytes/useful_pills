@@ -22,15 +22,11 @@ public class LavaFogMixin {
         if (entity instanceof Player player) {
             MobEffectInstance effect = player.getEffect(ModEffects.LAVA_VISION.get());
             if (effect != null && isEntitySubmergedInLava(entity)) {
-
                 RenderSystem.setShaderFogStart(0.0F);
                 RenderSystem.setShaderFogEnd(50.0F);
-
-
                 float red = 1.0F;
                 float green = 0.5F;
                 float blue = 0.3F;
-
                 RenderSystem.setShaderFogColor(red, green, blue);
                 ci.cancel();
             } else if (entity.isInLava() && isEntitySubmergedInLava(entity)) {
@@ -45,6 +41,3 @@ public class LavaFogMixin {
         return entity.isEyeInFluid(FluidTags.LAVA);
     }
 }
-
-
-
